@@ -9,7 +9,11 @@ RUN gem install bundler --no-rdoc --no-ri
 
 ENV BUNDLE_PATH /bundle
 
-ADD . /code
+ADD Gemfile /code/Gemfile
+ADD Gemfile.lock /code/Gemfile.lock
+ADD lita_config.rb /code/lita_config.rb
+ADD start /code/start
+
 WORKDIR /code
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf

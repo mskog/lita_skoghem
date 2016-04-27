@@ -1,0 +1,6 @@
+.env
+.envrc
+data
+supervisord.log
+supervisord.pid
+.bundle

@@ -1,0 +1,22 @@
+bot:
+  volumes:
+    - .:/code
+  build: .
+  volumes_from:
+    - bundle
+  links:
+    - redis
+  env_file:
+    - ./.env
+  ports:
+    - '8090:8080'
+
+bundle:
+  image: busybox
+  volumes:
+    - /bundle
+
+redis:
+  image: redis:3.0.5
+  volumes:
+    - /var/docker/lita/data/redis:/data

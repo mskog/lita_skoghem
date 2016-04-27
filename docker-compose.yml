@@ -19,4 +19,4 @@ bundle:
 redis:
   image: redis:3.0.5
   volumes:
-    - /var/docker/lita/data/redis:/data
+    - ./data/redis:/data

@@ -15,7 +15,7 @@ Lita.configure do |config|
   config.robot.log_level = ENV['LITA_LOG_LEVEL'] || :info
 
   # Redis Brain
-  config.redis = { url: REDIS_URL}
+  config.redis = { url: ENV['REDIS_URL']}
 
   # Adapter setup
   config.robot.adapter        = ENV['LITA_ADAPTER'] || :slack

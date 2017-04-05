@@ -88,5 +88,8 @@ DEPENDENCIES
   lita-urban-dictionary
   lita-wikipedia
 
+RUBY VERSION
+   ruby 2.3.2p217
+
 BUNDLED WITH
-   1.11.2
+   1.14.6

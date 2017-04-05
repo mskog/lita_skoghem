@@ -4,3 +4,4 @@ data
 supervisord.log
 supervisord.pid
 .bundle
+docker-compose.yml
